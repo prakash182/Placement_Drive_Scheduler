@@ -3,7 +3,7 @@ const router = express.Router();
 
 const generateData = require("../services/dataGenerator");
 
-router.post("/", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const data = await generateData();
 
